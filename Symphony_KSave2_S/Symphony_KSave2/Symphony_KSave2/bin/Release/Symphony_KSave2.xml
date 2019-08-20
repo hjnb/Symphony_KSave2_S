@@ -1,0 +1,151 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Symphony_KSave2
+</name>
+</assembly>
+<members>
+<member name="M:Symphony_KSave2.Util.EnableDoubleBuffering(System.Windows.Forms.Control)">
+	<summary>
+ コントロールのDoubleBufferedプロパティをTrueにする
+ </summary>
+	<param name="control">対象のコントロール</param>
+</member><member name="M:Symphony_KSave2.Util.checkDBNullValue(System.Object)">
+	<summary>
+ dgvのセルの値がNullかチェック、Nullの場合空文字を返す
+ </summary>
+	<param name="dgvCellValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.Util.convADStrToWarekiStr(System.String)">
+	<summary>
+ 西暦(yyyy/MM/dd)を和暦に変換
+ </summary>
+	<param name="adStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.Util.convWarekiStrToADStr(System.String)">
+	<summary>
+ 和暦を西暦に変換
+ </summary>
+	<param name="warekiStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.Util.getKanji(System.String)">
+	<summary>
+ 和暦の漢字を取得
+ </summary>
+	<param name="warekiStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.Util.getIniString(System.String,System.String,System.String)">
+	<summary>
+ iniファイルから読み込み
+ </summary>
+	<param name="lpSection">セクション名</param>
+	<param name="lpKeyName">読み込むkey名</param>
+	<param name="lpFileName">iniファイルパス</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.Util.putIniString(System.String,System.String,System.String,System.String)">
+	<summary>
+ iniファイルへ書き込み
+ </summary>
+	<param name="lpSection">セクション名</param>
+	<param name="lpKeyName">書き込む対象のkey名</param>
+	<param name="lpValue">書き込む値</param>
+	<param name="lpFileName">iniファイルパス</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Symphony_KSave2.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Symphony_KSave2.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Symphony_KSave2.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Symphony_KSave2.topForm.btnReadOnly_Click(System.Object,System.EventArgs)">
+	<summary>
+ （閲覧用）ボタンクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.#ctor">
+	<summary>
+ コンストラクタ
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.認定調査票_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ keyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.認定調査票_Load(System.Object,System.EventArgs)">
+	<summary>
+ loadイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.settingUserList">
+	<summary>
+ 利用者リスト初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.displayUserList">
+	<summary>
+ 利用者リスト表示
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.displayRecordList(System.String)">
+	<summary>
+ 履歴リスト表示
+ </summary>
+	<param name="userNam">利用者名</param>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.userList_CellMouseClick(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ 利用者リストCellMouseClickイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.initDgvNumInput">
+	<summary>
+ 番号dgv初期設定
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.initDgvSp(Symphony_KSave2.SpDgv)">
+	<summary>
+ 特記事項タブdgv初期設定
+ </summary>
+	<param name="dgv"></param>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.displayUserData(System.String,System.String,System.String)">
+	<summary>
+ 調査票データ表示
+ </summary>
+	<param name="nam">氏名</param>
+	<param name="kana">カナ</param>
+	<param name="ymd1">実施日</param>
+	<remarks></remarks>
+</member><member name="M:Symphony_KSave2.認定調査票閲覧.rbtn_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ 利用者ラジオボタン値変更イベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

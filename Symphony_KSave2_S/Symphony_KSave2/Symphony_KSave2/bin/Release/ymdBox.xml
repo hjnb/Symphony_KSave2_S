@@ -1,0 +1,206 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ymdBox
+</name>
+</assembly>
+<members>
+<member name="P:ymdBox.ymdBox.EraText">
+	<summary>
+ 和暦部分の文字列
+ </summary>
+	<value>設定する文字列</value>
+	<returns>和暦部分の文字列</returns>
+	<remarks></remarks>
+</member><member name="P:ymdBox.ymdBox.MonthText">
+	<summary>
+ 月の文字列
+ </summary>
+	<value>設定する文字列</value>
+	<returns>月の文字列</returns>
+	<remarks></remarks>
+</member><member name="P:ymdBox.ymdBox.DateText">
+	<summary>
+ 日にちの文字列
+ </summary>
+	<value>設定する日にち</value>
+	<returns>日にちの文字列</returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.setFocus(System.Int32)">
+	<summary>
+ 対象文字を選択状態にする
+ </summary>
+	<param name="targetIndex">選択対象文字インデックス</param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.getEraChar">
+	<summary>
+ 和暦の１文字目（記号）を取得する
+ </summary>
+	<returns>和暦の１文字目（記号）</returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.getEraNumStr">
+	<summary>
+ 和暦の数値部分を取得
+ </summary>
+	<returns>和暦の数値部分</returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.convADStrToWarekiStr(System.String)">
+	<summary>
+ 西暦(yyyy/MM/dd)を和暦に変換
+ </summary>
+	<param name="adStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.convWarekiStrToADStr(System.String)">
+	<summary>
+ 和暦を西暦に変換
+ </summary>
+	<param name="warekiStr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.getADStr">
+	<summary>
+ 入力されている和暦日付を西暦(yyyy/MM/dd)に変換して返す
+ </summary>
+	<returns>西暦(yyyy/MM/dd)の文字列</returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.setADStr(System.Object)">
+	<summary>
+ 西暦表記(yyyy/MM/dd)を和暦表記に変換してテキストボックスへ設定する
+ </summary>
+	<param name="ymdStr">設定する西暦表記文字列(yyyy/MM/dd)</param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.setWarekiStr(System.String)">
+	<summary>
+ 和暦表記(gyy/MM/dd)をテキストボックスへ設定する
+ </summary>
+	<param name="warekiStr"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.getDay">
+	<summary>
+ 入力日付の曜日（日本語）を取得する
+ </summary>
+	<returns>曜日（日本語）</returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.clearText">
+	<summary>
+ テキストボックスに設定されているテキストを全て削除する
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.eraBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ 年号テキストボックスのKeyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.monthBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ 月のテキストボックスのKeyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.dateBox_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ 日にちテキストボックスのKeyDownイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.checkDate(System.String,System.String,System.String)">
+	<summary>
+ 入力された日付が存在するかチェック
+ </summary>
+	<param name="eraStr">年号の文字列</param>
+	<param name="monthStr">月の文字列</param>
+	<param name="dateStr">日にちの文字列</param>
+	<returns>存在するかの判定値（Boolean）</returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.convertEraText(System.String,System.String,System.String)">
+	<summary>
+ 存在する日付に変換する
+ </summary>
+	<param name="eraStr">年号の文字列</param>
+	<param name="monthStr">月の文字列</param>
+	<param name="dateStr">日にちの文字列</param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.getMonthDaysNum(System.String,System.String)">
+	<summary>
+ 月の日数を取得
+ </summary>
+	<param name="eraStr">年号の文字列</param>
+	<param name="monthStr">月の文字列</param>
+	<returns>月の日数</returns>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.eraBox_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ 年号テキストボックスのマウスクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.monthBox_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ 月のテキストボックスのマウスクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.dateBox_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ 日にちのテキストボックスのマウスクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.eraBox_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ 年号のテキストボックスのダブルクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.monthBox_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ 月のテキストボックスのダブルクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.dateBox_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>
+ 日にちのテキストボックスのダブルクリックイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:ymdBox.ymdBox.eraBox_GotFocus(System.Object,System.EventArgs)">
+	<summary>
+ 年号のテキストボックスのフォーカスイベント
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:ymdBox.ymdBox">
+	<summary>
+ 年月日入力テキストボックスクラス
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ymdBox.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ymdBox.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ymdBox.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
